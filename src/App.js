@@ -35,6 +35,7 @@ function App(props) {
           {buttons.map((b, i) => <Button color={b.color} step={b.step} key={i} handleClick={handleClick} />)}
           <form onSubmit={handleListClick}>
               <input type='text' className='form-control' list='thingToDo' />
+              <input type='submit' value='Submit' />
           </form>
           {lists.map((l, idx) => <p key={idx}>{l}</p>)}
         </div>
